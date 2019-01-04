@@ -1,0 +1,11 @@
+body
+{
+  padding-top: 10px;
+}
+[class*="col-"], footer
+{
+  background: lightgreen;
+  border-radius: 1px;
+  line-height: 1px;
+  text-align: center;
+}
