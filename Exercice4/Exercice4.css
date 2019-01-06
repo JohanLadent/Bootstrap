@@ -1,0 +1,10 @@
+.MANU
+ {
+   text-align: center;
+ }
+.modal-body
+{
+  background: blue;
+  text-align: center;
+  color: white;
+}
