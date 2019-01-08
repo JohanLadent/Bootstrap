@@ -11,15 +11,29 @@
     <title>Exercice 2</title>
   </head>
   <body>
-    <h1>Exercice 2</h1>
-    <div class="row">
-      <div class="col-md-4 bg-primary">BLOC1</div>
-      <div class="col-md-4 bg-primary">BLOC2</div>
-      <div class="col-md-4 bg-primary">BLOC3</div>
-      <div class="col-md-2 bg-danger">BLOC4</div>
-      <div class="col-md-2 bg-danger">BLOC5</div>
-      <div class="col-md-4 bg-danger">BLOC6</div>
-      <div class="col-md-4 bg-danger">BLOC7</div>
+    <!-- Le container-fluide sert à englober l'intégralité de la loargeur d'une page -->
+    <div class="container-fluid text-center text-white">
+  <!-- Création d'une row -->
+      <div class="row">
+        <!-- 3x4=12 car une row c'est 12 colonnes  -->
+        <div class="col-sm-4 col-mdr-4 bg-primary border border-white">BLOC1</div>
+        <div class="col-sm-4 col-mdr-4 bg-primary border border-white">BLOC2</div>
+        <div class="col-sm-4 col-mdr-4 bg-primary border border-white">BLOC3</div>
+        <!-- Le passage à la ligne se fait auto sur le rendu, on déclare
+            une nouvelle row afin de pouvoir la couper en deux blocs.
+            sm-4 pour occuper 1/3 de la ligne suivante. -->
+        <div class="col-sm-4">
+          <div class="row">
+            <!-- 6 par col afin d'occuper l'intégralité de la nouvelle row -->
+            <div class="col-sm-6 bg-danger border border-white">BLOC4</div>
+            <div class="col-sm-6 bg-danger border border-white">BLOC5</div>
+          </div>
+        </div>
+        <!-- 4 et 4 pour occuper le reste de la ligne -->
+        <div class="col-sm-4 col-mdr-4 bg-danger border border-white">BLOC6</div>
+        <div class="col-sm-4 col-mdr-4 bg-danger border border-white">BLOC7</div>
+      </div>
+
     </div>
 
     <!-- Optional JavaScript -->
